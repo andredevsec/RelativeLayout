@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -46,8 +47,8 @@
         android:layout_height="wrap_content"
         android:layout_below="@id/editTextCelsius"
         android:layout_centerInParent="true"
-        android:layout_marginTop="32dp"
-        android:text="@string/converter"/>
+        android:layout_marginTop="16dp"
+        android:text="@string/converter" />
 
     <TextView
         android:id="@+id/textViewResultadoCelsiusF"
@@ -70,5 +71,14 @@
         android:layout_below="@id/textViewResultadoCelsiusF"
         android:layout_marginTop="16dp"
         android:layout_marginLeft="16dp"/>
+
+    <ImageView
+        android:id="@+id/imageViewTemperature"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/temperature"
+        android:layout_below="@id/textViewResultadoCelsiusK"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"/>
 
 </RelativeLayout>
